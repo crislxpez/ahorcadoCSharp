@@ -15,3 +15,5 @@ Kaido
 Yamato
 LaughTale
 merry
+sunny
+ace

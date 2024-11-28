@@ -61,31 +61,22 @@ namespace Ahorcado.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon _189086133_ahorcado_o_ahorcado_adivinando_juego_icono_línea_arte_vector_icono_para_aplicaciones_y_sitios_web {
+            get {
+                object obj = ResourceManager.GetObject("_189086133_ahorcado_o_ahorcado_adivinando_juego_icono_línea_arte_vector_icono_par" +
+                        "a_aplicaciones_y_sitios_web", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _3f56de2a5942850b93acc3eb37bc5f11_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("3f56de2a5942850b93acc3eb37bc5f11-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap account_circle_fill {
-            get {
-                object obj = ResourceManager.GetObject("account-circle-fill", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap account_circle_fill__1_ {
-            get {
-                object obj = ResourceManager.GetObject("account-circle-fill (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,59 +164,9 @@ namespace Ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap botonJugar {
-            get {
-                object obj = ResourceManager.GetObject("botonJugar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fondo1 {
-            get {
-                object obj = ResourceManager.GetObject("fondo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fondoJujutsu {
-            get {
-                object obj = ResourceManager.GetObject("fondoJujutsu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fondoOnePiece {
-            get {
-                object obj = ResourceManager.GetObject("fondoOnePiece", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap goingMerry {
             get {
                 object obj = ResourceManager.GetObject("goingMerry", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap iconoIniciarSesion {
-            get {
-                object obj = ResourceManager.GetObject("iconoIniciarSesion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,21 +207,15 @@ namespace Ahorcado.Properties {
         ///Shanks
         ///Kaido
         ///Yamato
+        ///LaughTale
+        ///merry
+        ///sunny
+        ///ace
         ///.
         /// </summary>
         internal static string palabras {
             get {
                 return ResourceManager.GetString("palabras", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap play {
-            get {
-                object obj = ResourceManager.GetObject("play", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

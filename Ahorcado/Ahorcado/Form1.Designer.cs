@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelAbecedario = new System.Windows.Forms.FlowLayoutPanel();
             this.panelPalabra = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBoxDificultad = new System.Windows.Forms.ComboBox();
             this.groupBoxInicioSesion = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.buttonIniciarSesion = new System.Windows.Forms.Button();
-            this.textBoxUsuario = new System.Windows.Forms.TextBox();
-            this.labelUsuario = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxContrasenia = new System.Windows.Forms.TextBox();
             this.buttonSalirLogin = new System.Windows.Forms.Button();
+            this.textBoxContrasenia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelUsuario = new System.Windows.Forms.Label();
+            this.textBoxUsuario = new System.Windows.Forms.TextBox();
+            this.buttonIniciarSesion = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelAniadirPalabra = new System.Windows.Forms.Panel();
-            this.buttonAniadirPalabra = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxNuevaPalabra = new System.Windows.Forms.TextBox();
             this.buttonCancelarAniadirPalabra = new System.Windows.Forms.Button();
+            this.textBoxNuevaPalabra = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonAniadirPalabra = new System.Windows.Forms.Button();
             this.labelIntentosRestantes = new System.Windows.Forms.Label();
             this.pictureBoxLuffy = new System.Windows.Forms.PictureBox();
             this.pictureBoxPirata = new System.Windows.Forms.PictureBox();
@@ -104,32 +105,22 @@
             this.groupBoxInicioSesion.TabStop = false;
             this.groupBoxInicioSesion.Text = "Inicia Sesión";
             // 
-            // buttonIniciarSesion
+            // buttonSalirLogin
             // 
-            this.buttonIniciarSesion.Location = new System.Drawing.Point(40, 112);
-            this.buttonIniciarSesion.Name = "buttonIniciarSesion";
-            this.buttonIniciarSesion.Size = new System.Drawing.Size(104, 31);
-            this.buttonIniciarSesion.TabIndex = 0;
-            this.buttonIniciarSesion.Text = "Login";
-            this.buttonIniciarSesion.UseVisualStyleBackColor = true;
-            this.buttonIniciarSesion.Click += new System.EventHandler(this.buttonIniciarSesion_Click);
+            this.buttonSalirLogin.Location = new System.Drawing.Point(200, 112);
+            this.buttonSalirLogin.Name = "buttonSalirLogin";
+            this.buttonSalirLogin.Size = new System.Drawing.Size(104, 31);
+            this.buttonSalirLogin.TabIndex = 5;
+            this.buttonSalirLogin.Text = "Salir";
+            this.buttonSalirLogin.UseVisualStyleBackColor = true;
+            this.buttonSalirLogin.Click += new System.EventHandler(this.buttonSalirLogin_Click);
             // 
-            // textBoxUsuario
+            // textBoxContrasenia
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(176, 32);
-            this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(168, 22);
-            this.textBoxUsuario.TabIndex = 1;
-            // 
-            // labelUsuario
-            // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsuario.Location = new System.Drawing.Point(24, 32);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(72, 22);
-            this.labelUsuario.TabIndex = 2;
-            this.labelUsuario.Text = "Usuario";
+            this.textBoxContrasenia.Location = new System.Drawing.Point(176, 72);
+            this.textBoxContrasenia.Name = "textBoxContrasenia";
+            this.textBoxContrasenia.Size = new System.Drawing.Size(168, 22);
+            this.textBoxContrasenia.TabIndex = 4;
             // 
             // label1
             // 
@@ -141,22 +132,32 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Contraseña";
             // 
-            // textBoxContrasenia
+            // labelUsuario
             // 
-            this.textBoxContrasenia.Location = new System.Drawing.Point(176, 72);
-            this.textBoxContrasenia.Name = "textBoxContrasenia";
-            this.textBoxContrasenia.Size = new System.Drawing.Size(168, 22);
-            this.textBoxContrasenia.TabIndex = 4;
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsuario.Location = new System.Drawing.Point(24, 32);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(72, 22);
+            this.labelUsuario.TabIndex = 2;
+            this.labelUsuario.Text = "Usuario";
             // 
-            // buttonSalirLogin
+            // textBoxUsuario
             // 
-            this.buttonSalirLogin.Location = new System.Drawing.Point(200, 112);
-            this.buttonSalirLogin.Name = "buttonSalirLogin";
-            this.buttonSalirLogin.Size = new System.Drawing.Size(104, 31);
-            this.buttonSalirLogin.TabIndex = 5;
-            this.buttonSalirLogin.Text = "Salir";
-            this.buttonSalirLogin.UseVisualStyleBackColor = true;
-            this.buttonSalirLogin.Click += new System.EventHandler(this.buttonSalirLogin_Click);
+            this.textBoxUsuario.Location = new System.Drawing.Point(176, 32);
+            this.textBoxUsuario.Name = "textBoxUsuario";
+            this.textBoxUsuario.Size = new System.Drawing.Size(168, 22);
+            this.textBoxUsuario.TabIndex = 1;
+            // 
+            // buttonIniciarSesion
+            // 
+            this.buttonIniciarSesion.Location = new System.Drawing.Point(40, 112);
+            this.buttonIniciarSesion.Name = "buttonIniciarSesion";
+            this.buttonIniciarSesion.Size = new System.Drawing.Size(104, 31);
+            this.buttonIniciarSesion.TabIndex = 0;
+            this.buttonIniciarSesion.Text = "Login";
+            this.buttonIniciarSesion.UseVisualStyleBackColor = true;
+            this.buttonIniciarSesion.Click += new System.EventHandler(this.buttonIniciarSesion_Click);
             // 
             // panelAniadirPalabra
             // 
@@ -171,15 +172,22 @@
             this.panelAniadirPalabra.Size = new System.Drawing.Size(352, 152);
             this.panelAniadirPalabra.TabIndex = 9;
             // 
-            // buttonAniadirPalabra
+            // buttonCancelarAniadirPalabra
             // 
-            this.buttonAniadirPalabra.Location = new System.Drawing.Point(32, 104);
-            this.buttonAniadirPalabra.Name = "buttonAniadirPalabra";
-            this.buttonAniadirPalabra.Size = new System.Drawing.Size(104, 31);
-            this.buttonAniadirPalabra.TabIndex = 1;
-            this.buttonAniadirPalabra.Text = "Añadir";
-            this.buttonAniadirPalabra.UseVisualStyleBackColor = true;
-            this.buttonAniadirPalabra.Click += new System.EventHandler(this.buttonAniadirPalabra_Click);
+            this.buttonCancelarAniadirPalabra.Location = new System.Drawing.Point(192, 104);
+            this.buttonCancelarAniadirPalabra.Name = "buttonCancelarAniadirPalabra";
+            this.buttonCancelarAniadirPalabra.Size = new System.Drawing.Size(104, 31);
+            this.buttonCancelarAniadirPalabra.TabIndex = 4;
+            this.buttonCancelarAniadirPalabra.Text = "Cancelar";
+            this.buttonCancelarAniadirPalabra.UseVisualStyleBackColor = true;
+            this.buttonCancelarAniadirPalabra.Click += new System.EventHandler(this.buttonCancelarAniadirPalabra_Click);
+            // 
+            // textBoxNuevaPalabra
+            // 
+            this.textBoxNuevaPalabra.Location = new System.Drawing.Point(32, 56);
+            this.textBoxNuevaPalabra.Name = "textBoxNuevaPalabra";
+            this.textBoxNuevaPalabra.Size = new System.Drawing.Size(280, 22);
+            this.textBoxNuevaPalabra.TabIndex = 3;
             // 
             // label2
             // 
@@ -191,22 +199,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Añade una palabra al juego : ";
             // 
-            // textBoxNuevaPalabra
+            // buttonAniadirPalabra
             // 
-            this.textBoxNuevaPalabra.Location = new System.Drawing.Point(32, 56);
-            this.textBoxNuevaPalabra.Name = "textBoxNuevaPalabra";
-            this.textBoxNuevaPalabra.Size = new System.Drawing.Size(280, 22);
-            this.textBoxNuevaPalabra.TabIndex = 3;
-            // 
-            // buttonCancelarAniadirPalabra
-            // 
-            this.buttonCancelarAniadirPalabra.Location = new System.Drawing.Point(192, 104);
-            this.buttonCancelarAniadirPalabra.Name = "buttonCancelarAniadirPalabra";
-            this.buttonCancelarAniadirPalabra.Size = new System.Drawing.Size(104, 31);
-            this.buttonCancelarAniadirPalabra.TabIndex = 4;
-            this.buttonCancelarAniadirPalabra.Text = "Cancelar";
-            this.buttonCancelarAniadirPalabra.UseVisualStyleBackColor = true;
-            this.buttonCancelarAniadirPalabra.Click += new System.EventHandler(this.buttonCancelarAniadirPalabra_Click);
+            this.buttonAniadirPalabra.Location = new System.Drawing.Point(32, 104);
+            this.buttonAniadirPalabra.Name = "buttonAniadirPalabra";
+            this.buttonAniadirPalabra.Size = new System.Drawing.Size(104, 31);
+            this.buttonAniadirPalabra.TabIndex = 1;
+            this.buttonAniadirPalabra.Text = "Añadir";
+            this.buttonAniadirPalabra.UseVisualStyleBackColor = true;
+            this.buttonAniadirPalabra.Click += new System.EventHandler(this.buttonAniadirPalabra_Click);
             // 
             // labelIntentosRestantes
             // 
@@ -317,9 +318,10 @@
             this.Controls.Add(this.botonJugar);
             this.Controls.Add(this.panelAbecedario);
             this.Controls.Add(this.panelPalabra);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Ahorcado One Piece";
             this.groupBoxInicioSesion.ResumeLayout(false);
             this.groupBoxInicioSesion.PerformLayout();
             this.panelAniadirPalabra.ResumeLayout(false);

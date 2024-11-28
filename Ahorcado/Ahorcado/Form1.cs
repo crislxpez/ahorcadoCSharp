@@ -15,10 +15,10 @@ namespace Ahorcado
     {
         private List<string> palabras;
         private string palabraSeleccionada;
-        //private string palabraSeleccionada;
         private List<Label> etiquetasLetras = new List<Label>();
         private int intentosFallidos = 0; 
-        private int maxIntentos = 6; 
+        private int maxIntentos = 6;
+        string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "Resources", "palabras.txt");
 
         private List<Image> imagenesAhorcado;
 
@@ -46,14 +46,12 @@ namespace Ahorcado
         {
             this.BackgroundImage = null;
             llenarPanelAbecedario();
-            string rutaArchivo = "C:/Users/crise/source/repos/ahorcadoCSharp/Ahorcado/Ahorcado/Resources/palabras.txt";
-            //JuegoAhorcado juego = new JuegoAhorcado(rutaArchivo);
+            //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "palabras.txt");
 
             string dificultadSeleccionada = comboBoxDificultad.SelectedItem.ToString();
             palabras = LeerPalabrasDesdeArchivo(rutaArchivo);
             palabraSeleccionada = seleccionarPalabraAleatoria();
 
-            // Mostrar los huecos de la nueva palabra
             mostrarHuecos(palabraSeleccionada, dificultadSeleccionada);
             actualizarImagenAhorcado();
 
@@ -306,7 +304,8 @@ namespace Ahorcado
 
             if (!string.IsNullOrEmpty(nuevaPalabra))
             {
-                string rutaArchivo = "C:/Users/crise/source/repos/ahorcadoCSharp/Ahorcado/Ahorcado/Resources/palabras.txt";
+                //string rutaArchivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "palabras.txt");
+
 
                 using (StreamWriter sw = new StreamWriter(rutaArchivo, true))
                 {

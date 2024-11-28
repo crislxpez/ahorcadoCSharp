@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JuegoAhorcado.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,7 +150,10 @@
     <None Include="Resources\3f56de2a5942850b93acc3eb37bc5f11-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\palabras.txt" />
+    <None Include="Resources\palabras.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\189086133-ahorcado-o-ahorcado-adivinando-juego-icono-línea-arte-vector-icono-para-aplicaciones-y-sitios-web.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

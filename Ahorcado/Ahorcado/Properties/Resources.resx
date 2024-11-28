@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iconoIniciarSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconoIniciarSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ahorcado4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahorcado4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,9 +126,6 @@
   </data>
   <data name="ahorcado0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahorcado0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondoJujutsu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoJujutsu.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ahorcado5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahorcado5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,17 +136,8 @@
   <data name="account-circle-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\account-circle-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tituloOnePiece" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tituloOnePiece.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondoOnePiece" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoOnePiece.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="botonJugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\botonJugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ahorcado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahorcado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,25 +154,19 @@
   <data name="image-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="account-circle-fill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\account-circle-fill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="iconoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ahorcado3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ahorcado3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="account-circle-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\account-circle-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="3f56de2a5942850b93acc3eb37bc5f11-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3f56de2a5942850b93acc3eb37bc5f11-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="palabras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\palabras.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_189086133_ahorcado_o_ahorcado_adivinando_juego_icono_línea_arte_vector_icono_para_aplicaciones_y_sitios_web" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\189086133-ahorcado-o-ahorcado-adivinando-juego-icono-línea-arte-vector-icono-para-aplicaciones-y-sitios-web.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
