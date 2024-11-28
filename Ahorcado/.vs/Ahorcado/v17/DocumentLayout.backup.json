@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\crise\\source\\repos\\Ahorcado\\",
+  "WorkspaceRootPath": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|c:\\users\\crise\\source\\repos\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|c:\\users\\crise\\source\\repos\\ahorcadocsharp\\ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|solutionrelative:ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|C:\\Users\\crise\\source\\repos\\Ahorcado\\ahorcado\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|solutionrelative:ahorcado\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|solutionrelative:ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|C:\\Users\\crise\\source\\repos\\Ahorcado\\ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|solutionrelative:ahorcado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\ahorcado\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A2274DE-1A9B-4B1D-AE9E-C019891FBB72}|Ahorcado\\Ahorcado.csproj|solutionrelative:ahorcado\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,13 +26,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\Form1.cs",
               "RelativeDocumentMoniker": "Ahorcado\\Form1.cs",
-              "ToolTip": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\Form1.cs",
+              "ToolTip": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\Form1.cs",
               "RelativeToolTip": "Ahorcado\\Form1.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAmwOEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T17:36:03.321Z",
               "IsPinned": true,
@@ -40,13 +40,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "JuegoAhorcado.cs",
-              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\JuegoAhorcado.cs",
+              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\JuegoAhorcado.cs",
               "RelativeDocumentMoniker": "Ahorcado\\JuegoAhorcado.cs",
-              "ToolTip": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\JuegoAhorcado.cs",
+              "ToolTip": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\JuegoAhorcado.cs",
               "RelativeToolTip": "Ahorcado\\JuegoAhorcado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T17:59:06.084Z",
               "EditorCaption": ""
@@ -55,9 +55,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\Form1.cs",
               "RelativeDocumentMoniker": "Ahorcado\\Form1.cs",
-              "ToolTip": "C:\\Users\\crise\\source\\repos\\Ahorcado\\Ahorcado\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\crise\\source\\repos\\ahorcadoCSharp\\Ahorcado\\Ahorcado\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Ahorcado\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T16:45:28.374Z",

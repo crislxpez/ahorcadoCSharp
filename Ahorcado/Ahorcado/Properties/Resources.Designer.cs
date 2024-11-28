@@ -63,6 +63,16 @@ namespace Ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3f56de2a5942850b93acc3eb37bc5f11_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("3f56de2a5942850b93acc3eb37bc5f11-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap account_circle_fill {
             get {
                 object obj = ResourceManager.GetObject("account-circle-fill", resourceCulture);
@@ -253,9 +263,29 @@ namespace Ahorcado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap si_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("si-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tituloOnePiece {
             get {
                 object obj = ResourceManager.GetObject("tituloOnePiece", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoroBigote {
+            get {
+                object obj = ResourceManager.GetObject("zoroBigote", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
