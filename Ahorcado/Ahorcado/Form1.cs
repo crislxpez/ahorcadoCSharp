@@ -13,7 +13,9 @@ namespace Ahorcado
 {
     public partial class Form1 : Form
     {
+        private List<string> palabras;
         private string palabraSeleccionada;
+        //private string palabraSeleccionada;
         private List<Label> etiquetasLetras = new List<Label>();
         private int intentosFallidos = 0; 
         private int maxIntentos = 6; 
@@ -24,7 +26,7 @@ namespace Ahorcado
         {
             InitializeComponent();
             cargarImagenesAhorcado();
-            ActualizarImagenAhorcado();
+            actualizarImagenAhorcado();
             this.BackgroundImage = Properties.Resources.goingMerry;
             groupBoxInicioSesion.Visible = false;
             pictureBoxDibujoAhorcado.Visible = false;
@@ -43,16 +45,17 @@ namespace Ahorcado
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.BackgroundImage = null;
-            LlenarFlowLayoutPanel();
-            string rutaArchivo = "C:/Users/crise/Desktop/2DAM/DI/ahorcado/palabras.txt";
-            JuegoAhorcado juego = new JuegoAhorcado(rutaArchivo);
+            llenarPanelAbecedario();
+            string rutaArchivo = "C:/Users/crise/source/repos/ahorcadoCSharp/Ahorcado/Ahorcado/Resources/palabras.txt";
+            //JuegoAhorcado juego = new JuegoAhorcado(rutaArchivo);
 
             string dificultadSeleccionada = comboBoxDificultad.SelectedItem.ToString();
-            palabraSeleccionada = juego.SeleccionarPalabraAleatoria();
+            palabras = LeerPalabrasDesdeArchivo(rutaArchivo);
+            palabraSeleccionada = seleccionarPalabraAleatoria();
 
             // Mostrar los huecos de la nueva palabra
-            MostrarHuecos(palabraSeleccionada, dificultadSeleccionada);
-            ActualizarImagenAhorcado();
+            mostrarHuecos(palabraSeleccionada, dificultadSeleccionada);
+            actualizarImagenAhorcado();
 
             intentosFallidos = 0;
             panelAbecedario.Visible = true;
@@ -69,7 +72,7 @@ namespace Ahorcado
 
 
         }
-        private void LlenarFlowLayoutPanel()
+        private void llenarPanelAbecedario()
         {
             // Elimina cualquier control previo en el FlowLayoutPanel
             panelAbecedario.Controls.Clear();
@@ -95,7 +98,7 @@ namespace Ahorcado
             }
         }
 
-        private void MostrarHuecos(string palabra, string dificultad)
+        private void mostrarHuecos(string palabra, string dificultad)
         {
             panelPalabra.Controls.Clear();
             etiquetasLetras.Clear();
@@ -148,12 +151,12 @@ namespace Ahorcado
             }
             foreach (char caracter in caracteresAleatorios)
             {
-                ActualizarHuecos(caracter);
+                actualizarHuecos(caracter);
             }
         }
 
 
-        private void ActualizarHuecos(char letra)
+        private void actualizarHuecos(char letra)
         {
             for (int i = 0; i < palabraSeleccionada.Length; i++)
             {
@@ -174,12 +177,12 @@ namespace Ahorcado
             {
                 // Actualiza los huecos si la letra es correcta y pone el fondo verde
                 boton.BackColor = Color.LightGreen;
-                ActualizarHuecos(letraPulsada);
+                actualizarHuecos(letraPulsada);
 
-                if (PalabraCompletada())
+                if (comprobarSiPalabraCompleta())
                 {
                     MessageBox.Show("¡Felicidades! Has adivinado la palabra.");
-                    ReiniciarJuego();
+                    reiniciarJuego();
                 }
             }
             else
@@ -187,7 +190,7 @@ namespace Ahorcado
                 //cambia el color del botón a rojo
                 boton.BackColor = Color.LightCoral;
                 intentosFallidos++;
-                ActualizarImagenAhorcado();
+                actualizarImagenAhorcado();
                 labelIntentosRestantes.Text = "Intentos Restantes = " + (maxIntentos - intentosFallidos);
                 if(intentosFallidos == 4)
                 {
@@ -195,7 +198,7 @@ namespace Ahorcado
                 }
                 if (intentosFallidos >= maxIntentos)
                 {
-                    // Rellenar los huecos con la palabra completa
+                    // Rellena los huecos con la palabra completa
                     for (int i = 0; i < palabraSeleccionada.Length; i++)
                     {
                         etiquetasLetras[i].Text = palabraSeleccionada[i].ToString();
@@ -203,11 +206,11 @@ namespace Ahorcado
 
                     MessageBox.Show($"Has perdido. La palabra era: {palabraSeleccionada}");
 
-                    ReiniciarJuego();
+                    reiniciarJuego();
                 }
             }
         }
-        private void ReiniciarJuego()
+        private void reiniciarJuego()
         {
             this.BackgroundImage = Properties.Resources.goingMerry;
             panelPalabra.Controls.Clear();
@@ -229,7 +232,7 @@ namespace Ahorcado
             pictureBoxLuffy.Visible = false;
 
         }
-        private bool PalabraCompletada()
+        private bool comprobarSiPalabraCompleta()
         {
             bool palabraCompleta = true;
             // Comprueba si todas las etiquetas ya no tienen guiones
@@ -255,7 +258,7 @@ namespace Ahorcado
             imagenesAhorcado.Add(Properties.Resources.ahorcado6);
         }
 
-        private void ActualizarImagenAhorcado()
+        private void actualizarImagenAhorcado()
         {
             if (intentosFallidos >= 0 && intentosFallidos <= maxIntentos)
             {
@@ -273,16 +276,12 @@ namespace Ahorcado
             string usuario = textBoxUsuario.Text;
             string contraseña = textBoxContrasenia.Text;
 
-            // Simulación de autenticación (puedes añadir lógica más compleja si lo necesitas)
-            if (usuario == "admin" && contraseña == "1234") // Usuario y contraseña predeterminados
+            if (usuario == "admin" && contraseña == "1234") 
             {
 
                 MessageBox.Show("Sesión iniciada", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Ocultar controles de inicio de sesión
                 groupBoxInicioSesion.Visible = false;
-
-                // Mostrar controles para añadir palabras
                 panelAniadirPalabra.Visible = true;
             }
             else
@@ -307,22 +306,45 @@ namespace Ahorcado
 
             if (!string.IsNullOrEmpty(nuevaPalabra))
             {
-                // Ruta del archivo
-                string rutaArchivo = "C:/Users/crise/Desktop/2DAM/DI/ahorcado/palabras.txt";
+                string rutaArchivo = "C:/Users/crise/source/repos/ahorcadoCSharp/Ahorcado/Ahorcado/Resources/palabras.txt";
 
-                // Añadir la palabra al archivo
                 using (StreamWriter sw = new StreamWriter(rutaArchivo, true))
                 {
                     sw.WriteLine(nuevaPalabra);
                 }
 
                 MessageBox.Show("Palabra añadida con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                textBoxNuevaPalabra.Clear(); // Limpiar el campo
+                textBoxNuevaPalabra.Clear();
             }
             else
             {
                 MessageBox.Show("Introduce una palabra válida.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private List<string> LeerPalabrasDesdeArchivo(string rutaArchivo)
+        {
+            List<string> listaPalabras = new List<string>();
+
+            string[] lineas = File.ReadAllLines(rutaArchivo);
+
+            foreach (string linea in lineas)
+            {
+                if (!string.IsNullOrWhiteSpace(linea))
+                {
+                    listaPalabras.Add(linea.Trim().ToUpper());
+                }
+            }
+
+
+            return listaPalabras;
+        }
+
+        public string seleccionarPalabraAleatoria()
+        {
+            Random random = new Random();
+            palabraSeleccionada = palabras[random.Next(palabras.Count)];
+            return palabraSeleccionada;
         }
     }
 }

@@ -251,6 +251,30 @@ namespace Ahorcado.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a luffy
+        ///zoro
+        ///ahorcado
+        ///trafalgar
+        ///paramecia
+        ///Loguetown
+        ///Dressrosa
+        ///Poneglyph
+        ///Alabasta
+        ///Skypiea
+        ///Chopper
+        ///Nakama
+        ///Shanks
+        ///Kaido
+        ///Yamato
+        ///.
+        /// </summary>
+        internal static string palabras {
+            get {
+                return ResourceManager.GetString("palabras", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap play {
